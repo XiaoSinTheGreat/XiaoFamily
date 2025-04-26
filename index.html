@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Rafli</title>
+    <link rel="stylesheet" href="index.css">
+    <!----Font awesome cdn font icon css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+    <div class="hero-header">
+        <div class="wrapper">
+            <header>
+                <div class="logo">
+                    <i class="fa-solid fa-r"></i>
+                    <div class="logo-text">Rafli Arifuddin</div>
+                </div>
+                <nav>
+                    <div class="togglebtn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <ul class="navlinks">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Portfolio</a></li>
+                        <li><a href="#">Resume</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <div class="container">
+                <div class="hero-pic">
+                    <img src="wa.jpeg" alt="profile pic">
+                </div>
+                <div class="hero-text">
+                    <h5>Hi I'm <span class="input">Frontend Developer</span></h5>
+                    <h1>Rafli Arifuddin</h1>
+                    <p>
+                        Halo, saya Rafli
+                        Frontend Developer dengan spesialisasi dalam membangun antarmuka digital yang responsif, aksesibel, dan memukau. Berpengalaman menggunakan React.js, Tailwind CSS, dan Laravel untuk menciptakan solusi web yang elegan.
+                        Percaya bahwa kode yang baik harus seperti puisi: ringkas, indah, dan mudah dimengerti. Saat tidak sedang debugging, saya suka berkontribusi di proyek open-source atau mengeksplorasi desain sistem.
+                    </p>
+                    <div class="btn-group">
+                        <a href="#" class="btn active">Download CV</a>
+                        <a href="#" class="btn active">Contact</a>
+                    </div>
+                    
+                    <div class="social">
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--typed js for typing text effect-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>
+    <script>
+        /** creating button click hide navbar **/
+        var togglebtn=document.querySelector(".togglebtn");
+        var nav=document.querySelector(".navlinks");
+        var links=document.querySelector(".navlinks li");
+        
+        togglebtn.addEventListener("click", function(){
+            this.classlist.toggle("click");
+            nav.classlist.toggle("open");
+        })
+
+        var typed=new Typed(".input",{
+            strings:["Frontend Developer","UI/UX Designer","Web Developer"],
+            typeSpeed:70,
+            backSpeed:55,
+            loop:true
+        })
+    </script>
+</body>
+</html>
